@@ -18,16 +18,13 @@ kp2, des2 = sift.detectAndCompute(img2, None)
 # Brute Force matches
 bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
 matches = bf.match(des1, des2)
-matches = sorted(matches, key = lambda x:x.distance)
+matches = sorted(matches, key=lambda x: x.distance)
 
 result = cv2.drawMatches(img1, kp1, img2, kp2, matches[:50], None, flags=2)
 
-
-import pdb; pdb.set_trace()
 
 #cv2.imshow("Img1", img1)
 #cv2.imshow("Img2", img2)
 cv2.imshow("Result", result)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
