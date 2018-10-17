@@ -1,27 +1,4 @@
 function correspondance=FGCT(testFeatures,logoFeatures,pairs,alpha,sigma)
-% FGCT  FGCT method
-%   correspondance=FGCT(testFeatures,logoFeatures,pairs,alpha,sigma,geomthr)
-%   Calculates the geometric consistency using FGCT mentod.
-%       testFeatures: Structure with test image features as described in
-%       extractFeature.m
-%       logoFeatures: Structure with logo features as described in
-%       extractFeature.m
-%       pairs: Structure with matching indeces as described in
-%       matchFeatures.m
-%       alpha: Parameter regulates the geometry consistency (0..2).
-%       sigma: Standard deviation refers to the likelyhood.
-%       correspondance: percentage of the corresponding features by the
-%       total number of logo features.
-%  
-% Examples:
-%   correspondance=FGCT(testFeatures,logoFeatures,pairs,1,6,0.2);
-%
-%
-%% AUTHOR    : Nikos Zikos
-%% $DATE     : 13-Jan-2015 15:53:25 $
-%% $Revision : 1.00 $
-%% DEVELOPED : 7.14 (R2012a)
-%% FILENAME  : FGCT.m
 
 % Break if number of pairs are unsuficient
 if length(pairs.id_logo)<6

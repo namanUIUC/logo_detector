@@ -1,4 +1,4 @@
-%% D
+%% DriveInformed logo Detection
 clear all;clc;
 addpath('SIFTlib')
 checkCompilation();
