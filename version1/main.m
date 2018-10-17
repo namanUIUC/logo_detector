@@ -1,4 +1,4 @@
-% Spring 2018 CS 543 Assignment 2
+% BLOB DETECTOR 
 %% NAMAN SHUKLA
 
 clear all
@@ -6,7 +6,7 @@ clc
 
 % Path to the folder and subfolder
 root_path = 'data/';
-subject_name = 'animalspattern.jpg';                % vals : 'butterfly.jpg', 'einstein.jpg', 'fishes.jpg', 'sunflowers.jpg' [extras: 'gta5.jpg', 'AllPokemon.jpg', 'HubbleOriginal.jpg', 'animalspattern.jpg'] 
+subject_name = 'xyz.jpg';                
 
 % Hyper parameters (if any)
 Sigma = 2;                                      % User defined
